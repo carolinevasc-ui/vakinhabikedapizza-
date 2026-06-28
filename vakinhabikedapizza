@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda para comprar materiais para vender pizzas 🍕</title>
+    <style>
+        :root {
+            --primary: #d32f2f; /* Vermelho do guarda-sol */
+            --dark: #1a1a1a;    /* Preto da estrutura da bike */
+            --accent: #fbc02d;  /* Amarelo-pizza */
+            --light: #f5f5f5;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--light); color: #333; line-height: 1.6; }
+        
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://unsplash.com') no-repeat center center/cover; 
+            padding: 60px 20px; 
+            text-align: center; 
+            color: white; 
+        }
+        .logo-box {
+            background-color: white;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 8px;
+            border: 3px solid var(--primary);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .logo-box h1 { color: var(--dark); font-size: 2.2rem; text-transform: uppercase; font-weight: 900; }
+        .logo-box span { color: var(--primary); }
+        
+        header p { font-size: 1.1rem; max-width: 600px; margin: 10px auto 25px; font-weight: 300; color: #ddd; }
+        
+        .btn-donate { display: inline-block; background-color: var(--primary); color: white; padding: 14px 35px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4); transition: transform 0.2s, background 0.2s; text-transform: uppercase; }
+        .btn-donate:hover { transform: scale(1.03); background-color: #b71c1c; }
+        
+        .container { max-width: 700px; margin: 30px auto; padding: 0 15px; }
+        
+        .section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 25px; }
+        .section h2 { color: var(--dark); margin-bottom: 15px; border-left: 5px solid var(--primary); padding-left: 10px; font-size: 1.4rem; }
+        
+        .progress-container { margin: 20px 0; }
+        .progress-bar { background: #e0e0e0; border-radius: 25px; overflow: hidden; height: 22px; position: relative; }
+        .progress-fill { background: linear-gradient(90deg, var(--accent), var(--primary)); width: 5%; height: 100%; border-radius: 25px; }
+        .progress-text { display: flex; justify-content: space-between; font-weight: bold; margin-top: 8px; font-size: 0.9rem; }
+
+        .pix-box { background: #fffde7; border: 2px dashed var(--accent); padding: 20px; border-radius: 8px; text-align: center; margin-top: 15px; }
+        .pix-key { font-size: 1.1rem; font-weight: bold; color: var(--dark); background: white; padding: 12px; border-radius: 6px; border: 1px solid #ccc; display: block; margin: 12px 0; cursor: pointer; word-break: break-all; }
+        .pix-key:hover { background: #fafafa; }
+        
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <h1>Bike <span>da</span> Pizza</h1>
+        </div>
+        <p>Ajude a equipar nossa produção para levarmos a melhor pizza artesanal direto para as ruas!</p>
+        <a href="https://www.vakinha.com.br/vaquinha/ajuda-para-comprar-materiais-para-vender-pizzas/" target="_blank" class="btn-donate">Clique aqui para Doar</a>
+    </header>
+
+    <div class="container">
+        
+        <!-- HISTÓRIA ALINHADA COM A SUA CAMPANHA -->
+        <div class="section">
+            <h2>Nossa Próxima Meta: Materiais e Produção 🍕</h2>
+            <p>Nossa famosa <strong>Bike da Pizza</strong> já está montada e pronta para rodar levando sabor e praticidade. No entanto, para conseguir produzir as massas artesanais e recheios com qualidade profissional, nossa estrutura de cozinha precisa desse empurrão inicial.</p>
+            <br>
+            <p>O objetivo desta campanha é arrecadar fundos para a **compra de materiais essenciais, insumos de panificação e equipamentos de confecção das pizzas**.</p>
+            <br>
+            <p>Com essa estrutura montada, conseguiremos abastecer a bike diariamente com rapidez e menor custo, levando um produto de excelência para a nossa comunidade. Cada contribuição nos deixa mais perto desse sonho!</p>
+        </div>
+
+        <!-- PROGRESSO DA CAMPANHA -->
+        <div class="section">
+            <h2>Progresso da Arrecadação</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <!-- Modifique o "width: 5%;" para atualizar a barra visualmente quando receber doações -->
+                    <div class="progress-fill" style="width: 5%;"></div>
+                </div>
+                <div class="progress-text">
+                    <!-- Atualize os valores abaixo manualmente conforme sua vaquinha subir -->
+                    <span>Arrecadado: R$ 0</span>
+                    <span>Meta da Campanha</span>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 0.9rem; color: #666; font-style: italic;">Acompanhe o saldo em tempo real no site do Vakinha.</p>
+        </div>
+
+        <!-- BOTÃO DIRETOR PARA O SEU VAKINHA -->
+        <div id="doar" class="section" style="text-align: center;">
+            <h2>Faça Sua Contribuição Oficial</h2>
+            <p>Sua doação é processada com total segurança (via Pix, Cartão ou Boleto) diretamente na nossa página oficial do Vakinha:</p>
+            
+            <a href="https://www.vakinha.com.br/vaquinha/ajuda-para-comprar-materiais-para-vender-pizzas/" target="_blank" class="btn-donate" style="margin-top: 25px; background-color: #2e7d32; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4); display: block; text-align: center;">Acessar Minha Vaquinha Oficial</a>
+            
+            <p style="margin-top: 15px; font-size: 0.85rem; color: #666;">Você será redirecionado para a plataforma oficial do Vakinha.com.br</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bike da Pizza • Fortalecendo o Empreendedorismo Local.</p>
+    </footer>
+
+</body>
+</html>
